@@ -57,7 +57,7 @@ public class AssignmentDBUtil implements DataWritable<AssignmentDto>, DataReadab
     @Override
     public void writeDataToDB(AssignmentDto assignmentDto) {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "root", "anhhieu123");
+            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "123456");
 
             String sql = "INSERT INTO PHANCONG (LAIXEID, TUYENID, BOUT) VALUES (?, ?, ?)";
 
